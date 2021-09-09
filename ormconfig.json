@@ -1,0 +1,14 @@
+{
+"type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "root",
+   "password": "mysqlpass",
+   "database": "nlw_nodejs",
+   "migrations": ["src/databases/migration/*.ts"],
+   "entities": ["src/entities/*.{ts,js}"] ,
+   "cli":{
+    "migrationsDir": "src/databases/migration",
+    "entitiesDir": "src/entity"
+   }
+  }
